@@ -12,11 +12,13 @@ const TodoList = () => {
 
         const newTodos = [todo, ...todos];
         setTodos(newTodos)
+        console.log('todos',todo)
     }
 
     const updateTodo = (todoId, newValue)=> {
         if(!newValue.text || /^\s*$/.test(newValue.text)) {
-            return
+            const removeArr = [...todos].filter(todo => todo.id !== todoId)
+            setTodos(removeArr)
         }
 
         setTodos(prev => prev.map(item => (item.id === todoId? newValue : item)))

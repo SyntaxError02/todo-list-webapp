@@ -33,9 +33,9 @@ const TodoForm = (props) => {
             {
                 props.edit ==="undefined"?
                 (<form className="todoForm" onSubmit={handleSubmit}>
-                <input type="text" placeholder="Update a todo" onChange={handleChange} value={input} ref={inputRef} className="inputForm" />&nbsp;&nbsp;
+                <input type="text" placeholder="Add a todo" onChange={handleChange} value={input} ref={inputRef} className="inputForm" />&nbsp;&nbsp;
             </form>) : (<form className="todoForm" onSubmit={handleSubmit}>
-                <input type="text" placeholder="Add a todo" onChange={handleChange} ref={inputRef} value={input} className="inputForm" />&nbsp;&nbsp;
+                <input type="text" placeholder="Update a todo" onChange={handleChange} ref={inputRef} value={input} className="inputForm" />&nbsp;&nbsp;
             </form>)
             }
         </div>
