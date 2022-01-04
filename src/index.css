@@ -34,3 +34,48 @@ input {
 .complete {
   background: rgb(96, 248, 96) !important;
 }
+
+.todoItem {
+  display: flex;
+flex-direction: row;
+top: 260px;
+text-align: start;
+justify-content: space-between;
+background: #D3D7EA;
+border-radius: 16px;
+padding: 10px 20px 10px 20px;
+margin-top: 5px;
+
+}
+
+.btns {
+  display: flex;
+  flex-direction: row;
+  padding-top: 5px;
+}
+.todoForm {
+  display: flex;
+  justify-content: center;
+}
+
+.inputForm {
+  background: #F4F6F8;
+border: 1px solid rgba(35, 107, 248, 0.2);
+border-radius: 24px;
+display: flex;
+justify-content: center;
+padding: 10px 5px 10px 20px;
+width: 70%;
+}
+
+.header {
+  font-family: 'Google Sans';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  
+  color: #000000;
+  text-align: start;
+  padding: 10px 0 10px 10px;
+}
